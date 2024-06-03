@@ -8,12 +8,14 @@ from Jacaranda_Coffee.views.metodos import metods
 from Jacaranda_Coffee.views.footer import footer
 from Jacaranda_Coffee.views.speciality_coffee import speciality_coffee
 from Jacaranda_Coffee.components.green_line import green_line
+from Jacaranda_Coffee.views.carrusel import home_carousel
 
 
 def index() -> rx.Component:
     return rx.box(
         navbar(),
-        header_with_image_and_text(),
+        #header_with_image_and_text(),
+        home_carousel(),
         speciality_coffee(),
         info(),
         metods(),

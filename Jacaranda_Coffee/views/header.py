@@ -2,6 +2,7 @@ import reflex as rx
 from Jacaranda_Coffee.styles.styles import Size
 from Jacaranda_Coffee.styles.fonts import Font
 from Jacaranda_Coffee.styles.colors import Color, TextColor
+from Jacaranda_Coffee.views.carrusel import home_carousel
 
 def header_with_image_and_text():
     return rx.hstack(

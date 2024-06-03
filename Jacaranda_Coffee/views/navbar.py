@@ -6,6 +6,7 @@ from Jacaranda_Coffee.styles.fonts import Font
 def navbar() -> rx.Component:
     return rx.hstack(
         rx.hstack(
+            rx.hstack(
             rx.image(
                 src="coffee_logo.png",
                 alt="Imagén de una taza animada sonriendo",
@@ -13,10 +14,13 @@ def navbar() -> rx.Component:
             ),
             rx.heading(
                 "Jacaranda Coffee", 
+                line_height=["1", "1"],
                 font_size=[Size.BIG.value, Size.TITLE.value], 
-                padding_top=["1.5em","0.75em"], 
                 font_family=Font.TITLE.value, 
                 weight="light",
+            ),
+            direction="row",
+            align_items="center"
             ),
         rx.spacer(),
             rx.tablet_and_desktop(
